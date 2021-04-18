@@ -44,7 +44,7 @@ When making this keyboard I wanted to build something that fulfilled a few requi
   <li> .uf2 firmware releases with the original firmware released by me but also future updates in case there will be bugs that need to be fixed.</li>
   
   
-<h3> Credits for the software side </h3>
+<h4> Credits for the software side </h3>
   <ul>
   <li> <a href="https://github.com/adafruit">Adafruit Industries</a> - for their amazing work and tools that they provide for anyone to learn and enchance their skills</li>
   <li> <a href="https://github.com/danionescu0/arduino">Danionescu0</a> - for the helpful work done on parsing text files from an external storage in very short time </li>
