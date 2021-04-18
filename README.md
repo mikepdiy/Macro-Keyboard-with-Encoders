@@ -1,6 +1,7 @@
 <h1> Macro-Keyboard-with-Encoders</h1>
-
-
+<br>
+<img src="Kb-github.png">
+<br>
 <h3> Introduction and background </h3>
 <br>
 <br>
@@ -19,7 +20,7 @@ When making this keyboard I wanted to build something that fulfilled a few requi
   <li> Open source STL file of the board so the users can build their own spin of the case </li>
 </ul>
 
-<h3> What does this keyboard offer </h3>
+<h3> What does this keyboard offer ?</h3>
 
 <h4> Hardware </h4>
 <ul>
@@ -43,9 +44,10 @@ When making this keyboard I wanted to build something that fulfilled a few requi
   <li> .uf2 firmware releases with the original firmware released by me but also future updates in case there will be bugs that need to be fixed.</li>
   
   
-  <h3> Credits for the software side </h3>
+<h3> Credits for the software side </h3>
   <ul>
   <li> <a href="https://github.com/adafruit">Adafruit Industries</a> - for their amazing work and tools that they provide for anyone to learn and enchance their skills</li>
   <li> <a href="https://github.com/danionescu0/arduino">Danionescu0</a> - for the helpful work done on parsing text files from an external storage in very short time </li>
   <li> Creators and contribuitors of the <a href="https://github.com/thomasfredericks/Bounce2">Bounce 2 library</a></li>
   <li> Creators and contribuitors of the <a href="https://github.com/mprograms/SimpleRotary">Simple Rotary library</a></li>
+ </ul>
