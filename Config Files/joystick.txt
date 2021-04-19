@@ -1,0 +1,3 @@
+Joystick
+Command::KEY_LEFT_GUI,p
+Sleep::500

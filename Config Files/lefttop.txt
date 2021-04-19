@@ -1,0 +1,2 @@
+Left top
+Command::KEY_LEFT_SHIFT,MOUSE_MIDDLE
