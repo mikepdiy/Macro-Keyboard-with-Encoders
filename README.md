@@ -50,5 +50,5 @@ When making this keyboard I wanted to build something that fulfilled a few requi
   <li> <a href="https://github.com/danionescu0/arduino">Danionescu0</a> - for the helpful work done on parsing text files from an external storage in very short time </li>
   <li> Creators and contribuitors of the <a href="https://github.com/thomasfredericks/Bounce2">Bounce 2 library</a></li>
   <li> Creators and contribuitors of the <a href="https://github.com/mprograms/SimpleRotary">Simple Rotary library</a></li>
-  <li> The creator of <a. href="https://github.com/blurfl/makeUF2-tool/releases">MakeUF2-tool</a> </li>
+  <li> The creator of <a href="https://github.com/blurfl/makeUF2-tool/releases">MakeUF2-tool</a> </li>
  </ul>
