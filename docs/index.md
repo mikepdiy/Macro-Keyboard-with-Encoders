@@ -1,4 +1,4 @@
-## Welcome to the MacroKB web resources
+## Welcome to the MacroKB web resources page
 
 The user manual can be found  [here](user_manual.html).
 
