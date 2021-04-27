@@ -42,7 +42,16 @@ When making this keyboard I wanted to build something that fulfilled a few requi
   <li> In both firmware versions the keyboard can also type text for you i.e.: in case you want to use to type frequently used phrase or passowrd <b>(It's NOT SAFE to save your password in a shortcut keyboard and use it like this but sometimes convenience wins and the option is here but it's your choice if you want to use it or not)</li>
   <li> Access to the source code that was written for the Arduino IDE but it can be used in other IDE's</li>
   <li> .uf2 firmware releases with the original firmware released by me but also future updates in case there will be bugs that need to be fixed.</li>
+  </ul>
   
+ <h4> Included in this Repo </h4> 
+  <ul>
+    <li> Schematic </li>
+    <li> Code for Arduino </li>
+    <li> Bootloader </li>
+    <li> .step board 3D file </li>
+    <li> .stl 3D printable case that can be printed with FDM printers with 0.2mm layer height, 0.4mm nozzle and 30% infill using PLA </li>
+  </ul>
   
 <h4> Credits for the software side </h3>
   <ul>
