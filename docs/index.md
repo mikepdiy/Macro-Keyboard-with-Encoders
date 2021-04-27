@@ -1,10 +1,10 @@
 ## Welcome to the MacroKB web resources
 
-The user manual can be found  [here](https://github.com/mikepdiy/Macro-Keyboard-with-Encoders/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+The user manual can be found  [here](user_manual.html).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+More details are present in the Girhub repository [here](https://github.com/mikepdiy/Macro-Keyboard-with-Encoders/)
 
-### Markdown
+### More details to be added soon
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
