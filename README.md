@@ -57,7 +57,7 @@ When making this keyboard I wanted to build something that fulfilled a few requi
   <h4> Tempted to grab one for yourself ? </h4>
  
   
-  <a href="https://www.tindie.com/stores/mikepdiy/?ref=offsite_badges&utm_source=sellers_mikepdiy&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+  <a href="https://www.tindie.com/products/mikepdiy/macrokb-shortcut-keyboard/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
   
 <h4> Credits for the software side </h3>
   <ul>
