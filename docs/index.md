@@ -1,6 +1,6 @@
 ## Welcome to the MacroKB web resources page
 
-The user manual can be found  [here](user_manual.html).
+The user manual can be found  [here](manual.md).
 
 More details are present in the Girhub repository [here](https://github.com/mikepdiy/Macro-Keyboard-with-Encoders/)
 
