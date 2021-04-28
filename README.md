@@ -53,6 +53,12 @@ When making this keyboard I wanted to build something that fulfilled a few requi
     <li> .stl 3D printable case that can be printed with FDM printers with 0.2mm layer height, 0.4mm nozzle and 30% infill using PLA </li>
   </ul>
   
+  
+  <h4> Tempted to grab one for yourself ? </h4>
+ 
+  
+  <a href="https://www.tindie.com/stores/mikepdiy/?ref=offsite_badges&utm_source=sellers_mikepdiy&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+  
 <h4> Credits for the software side </h3>
   <ul>
   <li> <a href="https://github.com/adafruit">Adafruit Industries</a> - for their amazing work and tools that they provide for anyone to learn and enchance their skills</li>
