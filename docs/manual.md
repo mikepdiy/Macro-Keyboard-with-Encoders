@@ -21,7 +21,9 @@ The macro keyboard has the following interfaces :
 
 Supported Operating Systems : 
 
-    Any operating system that supports a keyboard and be used with our keyboard
+Any operating system that supports a keyboard can be used with our keyboard.
+    
+Works also with type-c to type-c cables ! (Who thought this is a feature ? :)) ) 
 ```
 ### Above Image
 
