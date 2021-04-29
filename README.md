@@ -38,10 +38,11 @@ When making this keyboard I wanted to build something that fulfilled a few requi
   <li> Easy configuration by editing a text file for each individual button</li>
   <li> It can act as a <b>shortcut keyboard</b> => no matter how long you press the button it only clicks once </li>
   <li> It can act as a <b>keyboard</b> => as long as you keep a button pressed the programmed buttons in the configuration file will be pressed; example : in Fusion360 oribiting around a 3D object is done by holding pressed SHIFT+Mouse Middle Button and moving the mouse pointer; this can be achieved by keeping pressed one button on the macro keyboard and moving: your own mouse, the joystick on the macro keyboard or the rotary encoders  </li>
-  <li> 2 firmware versions, one for <b>Shortcut keyboard</b> functionality and one for <b>Keyboard</b> functionality .</li>
-  <li> In both firmware versions the keyboard can also type text for you i.e.: in case you want to use to type frequently used phrase or passowrd <b>(It's NOT SAFE to save your password in a shortcut keyboard and use it like this but sometimes convenience wins and the option is here but it's your choice if you want to use it or not)</li>
+  <li> 2 firmware versions, one for <b> Shortcut keyboard </b> functionality and one for <b> Keyboard functionality </b> .</li>
+  <li> In both firmware versions the keyboard can also type text for you i.e.: in case you want to use to type frequently used phrase or passowrd <b>(It's NOT SAFE to save your password in a shortcut keyboard and use it like this but sometimes convenience wins and the option is here but it's your choice if you want to use it or not)</b></li>
   <li> Access to the source code that was written for the Arduino IDE but it can be used in other IDE's</li>
   <li> .uf2 firmware releases with the original firmware released by me but also future updates in case there will be bugs that need to be fixed.</li>
+  <li> For developers, this board also comes with exposed SWD interface that can be used if you need to </li>
   </ul>
   
  <h4> Included in this Repo </h4> 
