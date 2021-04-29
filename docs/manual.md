@@ -27,7 +27,7 @@ Supported Operating Systems :
 
 ### Encoders 
 
-<img src="images/Enc%20left.png" height="250" width="200"><img src="images/Enc%20right.png" height="250" width="200"><
+<img src="images/Enc%20left.png" height="250" width="200"><img src="images/Enc%20right.png" height="250" width="200">
 
 ```markdown
 The Left Rotary Encoder moves the mouse pointer `Horizontally`. 
@@ -40,17 +40,17 @@ In order to use our macro keyboard you have to configure each button to do what 
 
 ### Configuration Steps : 
 
-1. press the configuration button ( top middle button) and while you are keeping the button pressed, insert the usb cable that is connected to your pc. </br>
-<img src="images/Prog.png" height="250" width="200"> </br>
+1. press the configuration button ( top middle button) and while you are keeping the button pressed, insert the usb cable that is connected to your pc. 
+<img src="images/Prog.png" height="250" width="200"> 
 
 
 2. once the cable is connected to your pc the configuration button can be released and in a few seconds a new drive will appear in your file manager or “Computer” ( just like a new USB stick appears when you connect it to your computer).See the image below as an example : </br>
 ![USB Drive](/images/drive.png) </br>
- *If this is the first time you are connecting the keyboard to your computer, it might take a short while to install drivers .*</br>
+ *If this is the first time you are connecting the keyboard to your computer, it might take a short while to install drivers .* </br>
  3.By opening and accessing the new disk that just appeared you will see a list of 6 ( six) text files that are named corresponding to the key position that each one of them controls. Please see the image below : </br>
- ![files Drive](/images/files.png) </br>
+ ![files Drive](/images/files.png) 
  4. In order to change the configuration, you will have to open the file and edit the function(s) that the button will perform . Let’s open the file by double clicking on the button name.</br>
- ![Command example](/images/command.png) </br>
+ ![Command example](/images/command.png) 
  </br>
  The first row starts with *Command::* and after that we have each key separated by comma *,* , please put a comma *,* after each command and take note that the commands are executed in order.  We will explain the commands possible separately in the Keyboard Commands chapter. You can easily set 3 keys to be pressed at once but more than that is also possible. 
 
@@ -94,9 +94,9 @@ If your configuration files get damaged you just need to repeat the configuratio
 
 ### Situation B - My keyboard doesn’t come up as a USB disk anymore
 
-The easiest way to solve this problem is by reflashing the firmware ; to do this please connect the USB cable to your pc and then double press the reset button. Once the button was pressed 2 times, the LED on the bottom on the keyboard will turn **GREEN** and the keyboard will appear as a USB disk with the name : **MAKERKB** . Now you can copy the firmware file that you can download from <a href="https://github.com/mikepdiy/Macro-Keyboard-with-Encoders/tree/main/Code%20V0.1/Bootloader">here</a> to the keyboard (just drag and drop) and it will reflash itself and update.  </br>
+The easiest way to solve this problem is by reflashing the firmware ; to do this please connect the USB cable to your pc and then double press the reset button. Once the button was pressed 2 times, the LED on the bottom on the keyboard will turn **GREEN** and the keyboard will appear as a USB disk with the name : **MAKERKB** . Now you can copy the firmware file that you can download from <a href="https://github.com/mikepdiy/Macro-Keyboard-with-Encoders/tree/main/Code%20V0.1/Bootloader">here</a> to the keyboard (just drag and drop) and it will reflash itself and update.  
 
-<img src="images/Reset.png" height="250" width="200"></img><img src="images/Grn.png" height="250" width="200"></img>
+<img src="images/Reset.png" height="250" width="200"><img src="images/Grn.png" height="250" width="200">
 
 #### NOTICE: Please don’t disconnect the keyboard from your PC until the flashing process is done, this can take up to 2 minutes (120 seconds) . 
 
