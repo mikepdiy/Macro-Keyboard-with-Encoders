@@ -2,6 +2,8 @@
 
 ![Overall image](/images/Kb-github.png)
 
+
+
 ```markdown
 External Features / Components :
 
@@ -41,24 +43,28 @@ In order to use our macro keyboard you have to configure each button to do what 
 ### Configuration Steps : 
 
 1. press the configuration button ( top middle button) and while you are keeping the button pressed, insert the usb cable that is connected to your pc. 
-<img src="images/Prog.png" height="250" width="200"> 
+<img src="images/Prog.png" height="250" width="200">  
 
 
 2. once the cable is connected to your pc the configuration button can be released and in a few seconds a new drive will appear in your file manager or “Computer” ( just like a new USB stick appears when you connect it to your computer).See the image below as an example : </br>
-![USB Drive](/images/drive.png) </br>
+![USB Drive](/images/drive.png)  
  *If this is the first time you are connecting the keyboard to your computer, it might take a short while to install drivers .* </br>
- 3.By opening and accessing the new disk that just appeared you will see a list of 6 ( six) text files that are named corresponding to the key position that each one of them controls. Please see the image below : </br>
- ![files Drive](/images/files.png) 
- 4. In order to change the configuration, you will have to open the file and edit the function(s) that the button will perform . Let’s open the file by double clicking on the button name.</br>
- ![Command example](/images/command.png) 
- </br>
- The first row starts with *Command::* and after that we have each key separated by comma *,* , please put a comma *,* after each command and take note that the commands are executed in order.  We will explain the commands possible separately in the Keyboard Commands chapter. You can easily set 3 keys to be pressed at once but more than that is also possible. 
+ 3.By opening and accessing the new disk that just appeared you will see a list of 6 ( six) text files that are named corresponding to the key position that each one of them controls. Please see the image below :  
+ ![files Drive](/images/files.png)   
+ 
+ ![Open Settings](animations/open_settings.gif)  
+ 
+ 4. In order to change the configuration, you will have to open the file and edit the function(s) that the button will perform . Let’s open the file by double clicking on the button name.  
+ ![Command example](/images/command.png)  
+ 
+  ![Edit a command](animations/change_settings.gif)  
+ The first row starts with *Command::* and after that we have each key separated by comma ``` , ``` please put a comma ``` , ``` after each command and take note that the commands are executed in order.  We will explain the commands possible separately in the Keyboard Commands chapter. You can easily set 3 keys to be pressed at once but more than that is also possible.  
 
-The commands can also be combined with letters ; for example : Command:: KEY_LEFT_CTRL,p, will bring up the print menu in Windows and Linux while Command:: KEY_LEFT_ALT,p, will open the print menu on MacOs.
+The commands can also be combined with letters ; for example : ``` Command:: KEY_LEFT_CTRL,p, ``` will bring up the print menu in Windows and Linux while ```Command:: KEY_LEFT_ALT,p,``` will open the print menu on MacOs.  
 
-The example given here does the following : Simulate SHIFT key press and while SHIFT is pressed it will simulate the press of the Mouse Middle key , this is what is needed for Autodesk Fusion 360 to allow orbiting around a 3D file. 
+The example below does the following : Simulate SHIFT key press and while SHIFT is pressed it will simulate the press of the Mouse Middle key , this is what is needed for Autodesk Fusion 360 to allow orbiting around a 3D file.   
 
-The second row starts with *Sleep::* and this allows you to set a very short break that is counted in milliseconds in case your computer doesn’t register all the key presses that you have set. The Sleep function just allows a short amount of time for the computer to register each button press and it should be used like this :
+The second row starts with *Sleep::* and this allows you to set a very short break that is counted in milliseconds in case your computer doesn’t register all the key presses that you have set. The Sleep function just allows a short amount of time for the computer to register each button press and it should be used like this :  
 
 ```markdown
 Command::KEY_LEFT_SHIFT,
