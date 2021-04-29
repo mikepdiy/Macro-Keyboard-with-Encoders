@@ -125,7 +125,16 @@ The easiest way to solve this problem is by reflashing the firmware ; to do this
   </tr>
     <tr>
     <td>KEY_LEFT_GUI</td>
-    <td>Windows Key / OPT / Super</td>
+    <td>Windows Key</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>KEY_CMD</td>
+    <td>MacOS Left CMD Key</td>
+  </tr>
+      <tr>
+    <td>KEY_OPT</td>
+    <td>MacOS Left ALT KEY</td>
   </tr>
     <tr>
     <td>KEY_LEFT_ALT</td>
