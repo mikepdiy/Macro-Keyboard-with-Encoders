@@ -27,7 +27,7 @@ Supported Operating Systems :
 
 ### Encoders 
 
-<img src="/images/Enc%20left.png" height="250" width="200"></img><img src="/images/Enc%20right.png" height="250" width="200"></img>
+<img src="images/Enc%20left.png" height="250" width="200"></img><img src="images/Enc%20right.png" height="250" width="200"></img>
 
 ```markdown
 The Left Rotary Encoder moves the mouse pointer `Horizontally`. 
@@ -41,7 +41,7 @@ In order to use our macro keyboard you have to configure each button to do what 
 ### Configuration Steps : 
 
 1. press the configuration button ( top middle button) and while you are keeping the button pressed, insert the usb cable that is connected to your pc. </br>
-<img src="/images/Prog.png" height="250" width="200"></img></br>
+<img src="images/Prog.png" height="250" width="200"></img></br>
 
 
 2. once the cable is connected to your pc the configuration button can be released and in a few seconds a new drive will appear in your file manager or “Computer” ( just like a new USB stick appears when you connect it to your computer).See the image below as an example : </br>
@@ -96,7 +96,7 @@ If your configuration files get damaged you just need to repeat the configuratio
 
 The easiest way to solve this problem is by reflashing the firmware ; to do this please connect the USB cable to your pc and then double press the reset button. Once the button was pressed 2 times, the LED on the bottom on the keyboard will turn **GREEN** and the keyboard will appear as a USB disk with the name : **MAKERKB** . Now you can copy the firmware file that you can download from <a href="https://github.com/mikepdiy/Macro-Keyboard-with-Encoders/tree/main/Code%20V0.1/Bootloader">here</a> to the keyboard (just drag and drop) and it will reflash itself and update.  </br>
 
-<img src="/images/Reset.png" height="250" width="200"></img><img src="/images/Grn.png" height="250" width="200"></img>
+<img src="images/Reset.png" height="250" width="200"></img><img src="images/Grn.png" height="250" width="200"></img>
 
 #### NOTICE: Please don’t disconnect the keyboard from your PC until the flashing process is done, this can take up to 2 minutes (120 seconds) . 
 
