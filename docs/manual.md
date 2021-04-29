@@ -48,11 +48,17 @@ In order to use our macro keyboard you have to configure each button to do what 
 
 2. once the cable is connected to your pc the configuration button can be released and in a few seconds a new drive will appear in your file manager or “Computer” ( just like a new USB stick appears when you connect it to your computer).See the image below as an example :  
 ![USB Drive](/images/drive.png)  
- *If this is the first time you are connecting the keyboard to your computer, it might take a short while to install drivers .* </br>
- 3.By opening and accessing the new disk that just appeared you will see a list of 6 ( six) text files that are named corresponding to the key position that each one of them controls. Please see the image below :  
- ![files Drive](/images/files.png)   
+
+   
  
- ![Open Settings](animations/open_settings.gif)  
+ *If this is the first time you are connecting the keyboard to your computer, it might take a short while to install drivers .* 
+ 
+ 3.By opening and accessing the new disk that just appeared you will see a list of 6 ( six) text files that are named corresponding to the key position that each one of them controls. Please see the image below :  
+ ![files Drive](/images/files.png)  
+ 
+ ![Open Settings](animations/open_settings.gif) 
+ 
+ 
  
  4. In order to change the configuration, you will have to open the file and edit the function(s) that the button will perform . Let’s open the file by double clicking on the button name.  
  ![Command example](/images/command.png)  
