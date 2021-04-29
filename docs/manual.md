@@ -65,7 +65,7 @@ Command::KEY_LEFT_SHIFT,
 Sleep::5
 Command::MOUSE_MIDDLE,
 ```
-#### Don’t the *Sleep::* function unless you need it !
+#### Don’t use the *Sleep::* function unless you need it !
 
  
  
