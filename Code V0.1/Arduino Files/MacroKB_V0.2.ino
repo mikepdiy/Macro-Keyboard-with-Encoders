@@ -5,15 +5,9 @@ Simple Rotary : https://github.com/mprograms/SimpleRotary
 Bounce2 : https://github.com/thomasfredericks/Bounce2
 
 ===============================================================================================================
-To do:
-0.Remove long apparent delay between button presses
-a.try to remove bounce and just read button state as all have pullups
-I. try to usethe BUtton definition from bounce 2 library
-1.USB disconnect by pressing a button for safe disconnect
-2.Change rotary encoder precision by pressing a button - byte p
-
 
 History:
+v0.2 - cleaned up the code and released it to Github
 v0.1 - functions implemented and text file names changed to sensible values 
 
 
@@ -27,17 +21,6 @@ v0.1 - functions implemented and text file names changed to sensible values
 #include <SimpleRotary.h>
 #include <Bounce2.h>
 #include <ctype.h>
-
-//#include <Adafruit_DotStar.h>
-
-// There is only one pixel on the board
-//#define NUMPIXELS 1 
-
-//Use these pin definitions for the ItsyBitsy M4
-//#define DATAPIN    41
-//#define CLOCKPIN   40
-
-//Adafruit_DotStar strip(NUMPIXELS, DATAPIN, CLOCKPIN, DOTSTAR_BRG);
 
 //Definition of the variables
 
@@ -77,7 +60,7 @@ Bounce encdr = Bounce(3, 10);//enc right button
 char shiftKey = KEY_LEFT_SHIFT;
 char ctrlKey = KEY_LEFT_CTRL;
 
-//used to store scroll factor
+//used to store scroll factor for rotary encoders
 byte p = 5;
 
 
@@ -135,20 +118,9 @@ int vertValue, horzValue;  // Stores current analog output of each axis
 const int sensitivity = 100;  // Higher sensitivity value = slower mouse, should be <= about 500
 
 void setup() {
-/*
+
 //finalize the BOUNCE2 Library insert
-SW1.attach(2, INPUT);
-SW1.interval(5);
-SW2.attach(5, INPUT);
-SW2.interval(5);
-SW3.attach(11, INPUT);
-SW3.interval(5); 
-SW4.attach(7, INPUT);
-SW4.interval(5);
-SW5.attach(6, INPUT);
-SW5.interval(5);
-SW6.attach(A3, INPUT);
-SW6.interval(5);*/
+
 encst.attach(9, INPUT);
 encst.interval(5);
 encdr.attach(3, INPUT);
@@ -237,16 +209,12 @@ button6.attach( SW6, INPUT );
 
   
   Serial.begin(115200);
-  //while ( !Serial ) delay(10);   // wait for native usb
-
   Serial.println("Mass storage device connected and mounted");
   Serial.print("JEDEC ID: "); Serial.println(flash.getJEDECID(), HEX);
   Serial.print("Flash size: "); Serial.println(flash.size());
 
   changed = true; // to print contents initially
-  //strip.begin(); // Initialize pins for output
-  //strip.setBrightness(80);
-  //strip.show();  // Turn all LEDs off ASAP
+
   
 }
 
@@ -259,44 +227,6 @@ void loop() {
     Mouse.move(0, -vertValue/sensitivity, 0);  // move mouse on y axis
   if (horzValue != 0)
     Mouse.move(-horzValue/sensitivity, 0, 0);  // move mouse on x axis
-
-  //rainbow(10);             // Flowing rainbow cycle along the whole strip
-//check flash contents
- /*if ( changed )
-  {
-    changed = false;
-    
-    if ( !root.open("/") )
-    {
-      Serial.println("open root failed");
-      return;
-    }
-
-      Serial.println("Flash OK");
-    Serial.println("Flash contents:");
-
-    // Open next file in root.
-    // Warning, openNext starts at the current directory position
-    // so a rewind of the directory may be required.
-    while ( file.openNext(&root, O_RDONLY) )
-    {
-      file.printFileSize(&Serial);
-      Serial.write(' ');
-      file.printName(&Serial);
-      if ( file.isDir() )
-      {
-        // Indicate a directory.
-        Serial.write('/');
-      }
-      Serial.println();
-      file.close();
-    }
-
-    root.close();
-
-    Serial.println();
-    delay(1000); // refresh every 1 second
-  }*/
 
 // refresh/update keys status
 
@@ -314,48 +244,21 @@ encst2.update();
 encdr1.update();
 encdr2.update();
 
-/*
-if (encst.risingEdge() && (encClickFlag == 0)) {
-  p = SCRL_L_VALUE;
-  encClickFlag = 1;
-   Serial.println("encst Low Value");
-}
-else if 
-(encst.risingEdge() && (encClickFlag == 1)) {
-  p = SCRL_H_VALUE;
-  encClickFlag = 0;
-   Serial.println("encst High Value");
-}
-
-if (encdr.risingEdge() && (encClickFlag == 0)) {
-  p = SCRL_H_VALUE;
-  encClickFlag = 1;
-   Serial.println("encdr High Value");
-}
-else if 
-(encdr.risingEdge() && (encClickFlag == 1)) {
-  p = SCRL_L_VALUE;
-  encClickFlag = 0;
-   Serial.println("encdr Low Value");
-}
-*/
 
 if (button1.fell()) {
   sdFileToKeyboard1();
- // Serial.println("Bottom Left pressed");
+
 }
 else if (button1.rose()){
     Keyboard.releaseAll();
     delay(1);
     Mouse.releaseAll();
     delay(1);
-    Serial.println("Low Left Released");
 }
 
 
 if (button2.fell()) {
  sdFileToKeyboard2();
-  //Serial.println("Top Left pressed");
  
 }
 
@@ -364,18 +267,12 @@ else if (button2.rose()){
     delay(1);
     Mouse.releaseAll();
     delay(1);
-    Serial.println("Top Lefy Released");
+
 }
 
 if (button3.fell()){
   sdFileToKeyboard3();
-  //Keyboard.press(KEY_LEFT_CTRL);
-  //Keyboard.press(KEY_LEFT_SHIFT);
-  //delay(1);
-  //Mouse.press(MOUSE_MIDDLE);
-  //delay(1);
-  
-  Serial.println("Middle Top pressed");
+
 }
 
 else if (button3.rose()){
@@ -383,20 +280,11 @@ else if (button3.rose()){
     delay(1);
     Mouse.releaseAll();
     delay(1);
-    Serial.println("Middle Top Released");
+
 }
 
-/*
-else{
-    delay(1);
-    Mouse.release();
-    delay(1);
-    Keyboard.releaseAll();
-    
-}*/
-
 if (button4.fell()) {
-Serial.println("Top Right pressed");
+
 sdFileToKeyboard4();
   
 }
@@ -405,31 +293,31 @@ else if (button4.rose()){
     delay(1);
     Mouse.releaseAll();
     delay(1);
-    Serial.println("Top Right Released");
+
 }
 
 if (button5.fell()) {
 sdFileToKeyboard5();
-  Serial.println("Bottom Right pressed");
+
 }
 else if (button5.rose()){
     Keyboard.releaseAll();
     delay(1);
     Mouse.releaseAll();
     delay(1);
-    Serial.println("Bottom Right Released");
+
 }
 
 if (button6.fell()) {
 sdFileToKeyboard6();
-  Serial.println("Joystick pressed");
+
 }
 else if (button6.rose()){
     Keyboard.releaseAll();
     delay(1);
     Mouse.releaseAll();
     delay(1);
-    Serial.println("Joystick Released");
+
 }
 
   
@@ -501,28 +389,3 @@ fatfs.cacheClear();
 
  // digitalWrite(LED_BUILTIN, LOW);
 }
-/*
-// Rainbow cycle along whole strip. Pass delay time (in ms) between frames.
-void rainbow(int wait) {
-  // Hue of first pixel runs 5 complete loops through the color wheel.
-  // Color wheel has a range of 65536 but it's OK if we roll over, so
-  // just count from 0 to 5*65536. Adding 256 to firstPixelHue each time
-  // means we'll make 5*65536/256 = 1280 passes through this outer loop:
-  for(long firstPixelHue = 0; firstPixelHue < 5*65536; firstPixelHue += 256) {
-    for(int i=0; i<strip.numPixels(); i++) { // For each pixel in strip...
-      // Offset pixel hue by an amount to make one full revolution of the
-      // color wheel (range of 65536) along the length of the strip
-      // (strip.numPixels() steps):
-      int pixelHue = firstPixelHue + (i * 65536L / strip.numPixels());
-      // strip.ColorHSV() can take 1 or 3 arguments: a hue (0 to 65535) or
-      // optionally add saturation and value (brightness) (each 0 to 255).
-      // Here we're using just the single-argument hue variant. The result
-      // is passed through strip.gamma32() to provide 'truer' colors
-      // before assigning to each pixel:
-      strip.setPixelColor(i, strip.gamma32(strip.ColorHSV(pixelHue)));
-    }
-    strip.show(); // Update strip with new contents
-    delay(wait);  // Pause for a moment
-  }
-}
-*/
