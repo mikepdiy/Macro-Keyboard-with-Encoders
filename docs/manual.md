@@ -23,7 +23,7 @@ Supported Operating Systems :
 ```
 ### Above Image
 
-<img src="/images/Above.png" height="200" width="200"></img>
+<img src="images/Above.png" height="200" width="200"></img>
 
 ### Encoders 
 
@@ -31,7 +31,7 @@ Supported Operating Systems :
 
 ```markdown
 The Left Rotary Encoder moves the mouse pointer `Horizontally`. 
-The Right Rotary Encoder moves the mouse pointer `Vertically'. 
+The Right Rotary Encoder moves the mouse pointer `Vertically`. 
 ```
 
 ### How to change the buttons configuration/functionality :
