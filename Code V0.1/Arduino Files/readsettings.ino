@@ -135,9 +135,9 @@ char getCommandCode(String text) {
     char code = textCharacters[0];
     
     code = (text == "KEY_LEFT_CTRL") ? KEY_LEFT_CTRL : code;
-    code = (text == "KEY_CMD") ? KEY_LEFT_ALT : code;
+    code = (text == "KEY_CMD") ? KEY_LEFT_GUI : code;
     code = (text == "KEY_LEFT_GUI") ? KEY_LEFT_GUI : code;
-    code = (text == "KEY_OPT") ? KEY_LEFT_GUI : code;
+    code = (text == "KEY_OPT") ? KEY_LEFT_ALT : code;
     code = (text == "KEY_LEFT_SHIFT") ? KEY_LEFT_SHIFT : code;
     code = (text == "KEY_LEFT_ALT") ? KEY_LEFT_ALT : code;
     code = (text == "KEY_UP_ARROW") ? KEY_UP_ARROW : code;
