@@ -23,11 +23,11 @@ Supported Operating Systems :
 ```
 ### Above Image
 
-<img src="images/Above.png" height="200" width="200"></img>
+<img src="images/Above.png" height="200" width="200">
 
 ### Encoders 
 
-<img src="images/Enc%20left.png" height="250" width="200"></img><img src="images/Enc%20right.png" height="250" width="200"></img>
+<img src="images/Enc%20left.png" height="250" width="200"><img src="images/Enc%20right.png" height="250" width="200"><
 
 ```markdown
 The Left Rotary Encoder moves the mouse pointer `Horizontally`. 
@@ -41,16 +41,16 @@ In order to use our macro keyboard you have to configure each button to do what 
 ### Configuration Steps : 
 
 1. press the configuration button ( top middle button) and while you are keeping the button pressed, insert the usb cable that is connected to your pc. </br>
-<img src="images/Prog.png" height="250" width="200"></img></br>
+<img src="images/Prog.png" height="250" width="200"> </br>
 
 
 2. once the cable is connected to your pc the configuration button can be released and in a few seconds a new drive will appear in your file manager or “Computer” ( just like a new USB stick appears when you connect it to your computer).See the image below as an example : </br>
-![USB Drive](/images/drive.png)</br>
+![USB Drive](/images/drive.png) </br>
  *If this is the first time you are connecting the keyboard to your computer, it might take a short while to install drivers .*</br>
- 3.By opening and accessing the new disk that just appeared you will see a list of 6 ( six) text files that are named corresponding to the key position that each one of them controls. Please see the image below :</br>
- ![files Drive](/images/files.png)</br>
+ 3.By opening and accessing the new disk that just appeared you will see a list of 6 ( six) text files that are named corresponding to the key position that each one of them controls. Please see the image below : </br>
+ ![files Drive](/images/files.png) </br>
  4. In order to change the configuration, you will have to open the file and edit the function(s) that the button will perform . Let’s open the file by double clicking on the button name.</br>
- ![Command example](/images/command.png)</br>
+ ![Command example](/images/command.png) </br>
  </br>
  The first row starts with *Command::* and after that we have each key separated by comma *,* , please put a comma *,* after each command and take note that the commands are executed in order.  We will explain the commands possible separately in the Keyboard Commands chapter. You can easily set 3 keys to be pressed at once but more than that is also possible. 
 
